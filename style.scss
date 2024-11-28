@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+$color1:#FFF1E5;
+$color2:#BC6A46;
+$color3:#fff;
+$color4:#5c5c5c;
+$gap:16px;
+
+
+body{
+    background-color: $color3;
+
+    background:
+      radial-gradient(rgba(255, 255, 255, 0) 24%,#0000 25%),
+      radial-gradient(rgba(255, 255, 255, 0) 30%,#0000 32%) calc(32px/2) calc(32px/2),
+      repeating-conic-gradient(from 30deg,#ffffff 0 30deg,rgba(255, 241, 230, 0.2) 0 90deg);
+        background-size: 32px 32px;
+
+}
+
+a{
+    color: unset;
+    text-decoration: unset;
+}
+
+button{
+    border: none;
+}
+
+nav{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - ($gap*1));
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem $gap*.5;
+    background-color: $color1;
+    border-radius: $gap * .7;
+    background:
+    radial-gradient(rgba(255, 255, 255, 0) 24%,#0000 25%),
+    radial-gradient(rgba(255, 255, 255, 0) 30%,#0000 32%) calc(32px/2) calc(32px/2),
+    repeating-conic-gradient(from 30deg,#FFF1E5 0 30deg,rgba(255, 241, 230, .7) 0 90deg);
+      background-size: 32px 32px;
+
+
+    >#nav_left{
+        display: inline-block;
+        height: 100%;
+        svg{
+            height: 100%;
+        }
+        .cls-1{
+            fill: $color2;
+        }
+    }
+
+    >#nav_right{
+        // display: flex;
+        display: none;
+        align-items: center;
+        gap: $gap*4;
+        padding-right: $gap*3;
+
+        >a{
+            font-weight: 500;
+        }
+
+        >a:nth-last-child(1){
+            padding: 1rem;
+            background-color: $color2;
+            color: $color1;
+            border-radius: 3rem;
+
+        }
+    }
+
+    >#menu_button{
+
+        background-color: $color2;
+        height: 3rem;
+        aspect-ratio: 1/1;
+        border-radius: $gap*.4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >ion-icon{
+            font-size: 1.7rem;
+            color: $color3;
+        }
+    }
+}
+
+
+
+main{
+    
+
+    >#index_part_1{
+        height: 100vh;
+    }
+
+
+    >#index_part_2{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: $gap*2;
+
+        >h1{
+            font-weight: 500;
+        }
+
+        >p{
+            font-size: 1rem;
+            line-height: 170%;
+            font-weight: 500;
+            color: $color4;
+        }
+
+        >a{
+            background-color: $color2;
+            color: $color1;
+            font-size: .9rem;
+            font-weight: 500;
+            padding: 1rem 1.5rem;
+            width: fit-content;
+            border-radius: $gap*2;
+        }
+    }
+
+    >#index_part_3{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: $gap *2;
+        padding: 1rem;
+
+        >h1{
+            font-weight: 500;
+        }
+
+        >.part_3_card{
+            height: 20rem;
+            background-color: $color1;
+            border-radius: $gap;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            background:
+            radial-gradient(27% 29% at right, #0000 83%,rgba(255, 241, 230, 0.38) 85% 99%,#0000 101%) calc(32px/2) 32px,
+            radial-gradient(27% 29% at left, #0000 83%,rgba(255, 241, 230, 0.38) 85% 99%,#0000 101%) calc(32px/-2) 32px,
+            radial-gradient(29% 27% at top, #0000 83%,rgba(255, 241, 230, 0.38) 85% 99%,#0000 101%) 0 calc(32px/2),
+            radial-gradient(29% 27% at bottom, #0000 83%,rgba(255, 241, 230, 0.38) 85% 99%,#0000 101%) 0 calc(32px/-2)
+            #ffffff;
+            background-size: 64px 64px;
+
+
+            >.part_3_img{
+                height: 15rem;
+            }
+
+            >.part_3_header{
+                height: 5rem;
+                display: flex;
+                flex-direction: column;
+
+                >h2{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+
+            }
+        }
+
+    }
+}
+
+
+footer{
+    margin-top: 10rem;
+    // height: 40vh;
+    width: 100%;
+    background-color: #474747;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    *{
+        color: $color1;
+    }
+
+    >#footer_upper{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+       
+
+        >div{
+            padding: .5rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            >h3{
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            >h4{
+                font-size: .9rem;
+                font-weight: 400;
+            }
+
+            >a{
+                margin-top: 1rem;
+                padding: 1rem 1.5rem;
+                color: $color1;
+                border: 1px solid $color1;
+                border-radius: 3rem;
+                width: fit-content;
+            
+            }
+
+   
+        }
+    }
+}

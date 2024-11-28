@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  background: radial-gradient(rgba(255, 255, 255, 0) 24%, rgba(0, 0, 0, 0) 25%), radial-gradient(rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 32%) 16px 16px, repeating-conic-gradient(from 30deg, #ffffff 0 30deg, rgba(255, 241, 230, 0.2) 0 90deg);
+  background-size: 32px 32px;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+button {
+  border: none;
+}
+
+nav {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 16px);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 8px;
+  background-color: #FFF1E5;
+  border-radius: 11.2px;
+  background: radial-gradient(rgba(255, 255, 255, 0) 24%, rgba(0, 0, 0, 0) 25%), radial-gradient(rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 32%) 16px 16px, repeating-conic-gradient(from 30deg, #FFF1E5 0 30deg, rgba(255, 241, 230, 0.7) 0 90deg);
+  background-size: 32px 32px;
+}
+nav > #nav_left {
+  display: inline-block;
+  height: 100%;
+}
+nav > #nav_left svg {
+  height: 100%;
+}
+nav > #nav_left .cls-1 {
+  fill: #BC6A46;
+}
+nav > #nav_right {
+  display: none;
+  align-items: center;
+  gap: 64px;
+  padding-right: 48px;
+}
+nav > #nav_right > a {
+  font-weight: 500;
+}
+nav > #nav_right > a:nth-last-child(1) {
+  padding: 1rem;
+  background-color: #BC6A46;
+  color: #FFF1E5;
+  border-radius: 3rem;
+}
+nav > #menu_button {
+  background-color: #BC6A46;
+  height: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 6.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav > #menu_button > ion-icon {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+main > #index_part_1 {
+  height: 100vh;
+}
+main > #index_part_2 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+main > #index_part_2 > h1 {
+  font-weight: 500;
+}
+main > #index_part_2 > p {
+  font-size: 1rem;
+  line-height: 170%;
+  font-weight: 500;
+  color: #5c5c5c;
+}
+main > #index_part_2 > a {
+  background-color: #BC6A46;
+  color: #FFF1E5;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 32px;
+}
+main > #index_part_3 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 1rem;
+}
+main > #index_part_3 > h1 {
+  font-weight: 500;
+}
+main > #index_part_3 > .part_3_card {
+  height: 20rem;
+  background-color: #FFF1E5;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(27% 29% at right, rgba(0, 0, 0, 0) 83%, rgba(255, 241, 230, 0.38) 85% 99%, rgba(0, 0, 0, 0) 101%) 16px 32px, radial-gradient(27% 29% at left, rgba(0, 0, 0, 0) 83%, rgba(255, 241, 230, 0.38) 85% 99%, rgba(0, 0, 0, 0) 101%) -16px 32px, radial-gradient(29% 27% at top, rgba(0, 0, 0, 0) 83%, rgba(255, 241, 230, 0.38) 85% 99%, rgba(0, 0, 0, 0) 101%) 0 16px, radial-gradient(29% 27% at bottom, rgba(0, 0, 0, 0) 83%, rgba(255, 241, 230, 0.38) 85% 99%, rgba(0, 0, 0, 0) 101%) 0 -16px #ffffff;
+  background-size: 64px 64px;
+}
+main > #index_part_3 > .part_3_card > .part_3_img {
+  height: 15rem;
+}
+main > #index_part_3 > .part_3_card > .part_3_header {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+main > #index_part_3 > .part_3_card > .part_3_header > h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 10rem;
+  width: 100%;
+  background-color: #474747;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer * {
+  color: #FFF1E5;
+}
+footer > #footer_upper {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer > #footer_upper > div {
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer > #footer_upper > div > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+footer > #footer_upper > div > h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+footer > #footer_upper > div > a {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  color: #FFF1E5;
+  border: 1px solid #FFF1E5;
+  border-radius: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=style.css.map */
