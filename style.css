@@ -87,6 +87,7 @@ main > #index_part_1 > #index_part_1_left {
 }
 main > #index_part_1 > #index_part_1_left > h1 {
   font-size: 1.3rem;
+  font-weight: 600;
 }
 main > #index_part_1 > #index_part_1_left > p {
   font-size: 1rem;
