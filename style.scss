@@ -46,6 +46,27 @@ nav{
         width: 3.5rem;
         height: 3.5rem;
 
+        background-color: $color1;
+        border: none;
+        border-radius: 5rem;
+
+        svg{
+            fill: $color2;
+            width: 50%;
+            height: 50%;
+        }
+        position: relative;
+        &::before{
+            content: "Bağış Yap";
+            position: absolute;
+            bottom: -1.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            text-wrap: nowrap;
+            font-size: .8rem;
+            font-weight: 500;
+        }
+
     }
 
     
@@ -182,8 +203,8 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem;
-    background-color: $color3;
+    padding: .5rem;
+    // background-color: $color3;
     margin-top: 4rem;
 
     >#footer_upper{
@@ -210,6 +231,29 @@ footer{
             >h4{
                 font-size: 1rem;
                 font-weight: 600;
+            }
+        }
+
+        >#footer_right{
+            
+            >h3{
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            >h4{
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            >a{
+                width: fit-content;
+                background-color: $color1;
+                padding: 1rem 1.5rem;
+                font-size: .9rem;
+                border-radius: 2rem;
+                color: $color2;
+                font-weight: 500;
             }
         }
     }

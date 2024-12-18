@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +36,25 @@ nav > #menu_button {
   justify-content: center;
   width: 3.5rem;
   height: 3.5rem;
+  background-color: #9e7148;
+  border: none;
+  border-radius: 5rem;
+  position: relative;
+}
+nav > #menu_button svg {
+  fill: #f7f7f7;
+  width: 50%;
+  height: 50%;
+}
+nav > #menu_button::before {
+  content: "Bağış Yap";
+  position: absolute;
+  bottom: -1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-wrap: nowrap;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 a {
@@ -144,8 +164,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
-  background-color: #e7e7e7;
+  padding: 0.5rem;
   margin-top: 4rem;
 }
 footer > #footer_upper {
@@ -168,4 +187,22 @@ footer > #footer_upper > #footer_left > h3 {
 footer > #footer_upper > #footer_left > h4 {
   font-size: 1rem;
   font-weight: 600;
+}
+footer > #footer_upper > #footer_right > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+footer > #footer_upper > #footer_right > h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer > #footer_upper > #footer_right > a {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #9e7148;
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 2rem;
+  color: #f7f7f7;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
