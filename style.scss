@@ -7,6 +7,7 @@
 }
 
 $color1: #9e7148;
+$color4: rgb(63, 50, 36);
 $color2: #f7f7f7;
 $color3: #e7e7e7;
 
@@ -30,6 +31,7 @@ nav{
 
         >svg{
             height: 3rem;
+            fill: $color4;
 
         }
     }

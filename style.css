@@ -25,6 +25,7 @@ nav > #nav_left {
 }
 nav > #nav_left > svg {
   height: 3rem;
+  fill: rgb(63, 50, 36);
 }
 nav > #nav_right {
   display: none;
