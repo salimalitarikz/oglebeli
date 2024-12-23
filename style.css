@@ -231,4 +231,39 @@ footer > #footer_upper > #footer_right > a {
   border-radius: 2rem;
   color: #f7f7f7;
   font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    padding: 2rem 7.5%;
+  }
+  main > #index_part_1 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main > #index_part_1 > div {
+    width: 35% !important;
+  }
+  main > #index_part_1 > #index_part_1_left > h1 {
+    font-size: 2rem;
+  }
+  main > #index_part_2 {
+    padding: 0 7.5%;
+    justify-content: space-between;
+  }
+  main > #index_part_2 > .part_2_card {
+    width: 20%;
+  }
+  main > #index_part_2 > h1 {
+    font-size: 2rem;
+  }
+  footer {
+    padding: 0 10rem;
+    padding-bottom: 5rem;
+  }
+  footer > #footer_upper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=style.css.map */
